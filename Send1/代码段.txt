@@ -1,0 +1,19 @@
+//获得精确的时间
+	LARGE_INTEGER litmp; 
+	LONGLONG QPart1,QPart2; 
+	double dfMinus, dfFreq, dfTim; 
+	QueryPerformanceFrequency(&litmp); 
+	// 获得计数器的时钟频率 
+	dfFreq = (double)litmp.QuadPart; 
+	QueryPerformanceCounter(&litmp); 
+	// 获得初始值 
+	QPart1 = litmp.QuadPart; 
+	Sleep(100) ; 
+	QueryPerformanceCounter(&litmp); 
+	// 获得终止值 
+	QPart2 = litmp.QuadPart; 
+	dfMinus = (double)(QPart2 - QPart1); 
+	dfTim = dfMinus / dfFreq; 
+	// 获得对应的时间值 
+
+//

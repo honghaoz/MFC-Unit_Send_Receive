@@ -1,0 +1,399 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Send1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Send1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEND1_DIALOG DIALOGEX 0, 0, 522, 331
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Send1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,318,508,6
+    CONTROL         "A,B,C相",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,473,59,38,10
+    CONTROL         "A相",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,474,75,29,
+                    10
+    CONTROL         "B相",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,474,91,29,
+                    10
+    CONTROL         "C相",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,474,107,29,
+                    10
+    CONTROL         "关闭",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,474,123,
+                    32,10
+    CONTROL         "A,B,C相",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,215,59,40,10
+    CONTROL         "A相",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,215,75,29,
+                    10
+    CONTROL         "B相",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,215,91,29,
+                    10
+    CONTROL         "C相",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,215,107,29,
+                    10
+    CONTROL         "关闭",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,215,123,32,
+                    10
+    DEFPUSHBUTTON   "发送",IDSEND,466,250,50,14
+    PUSHBUTTON      "退出",IDCANCEL,466,288,50,14
+    COMBOBOX        IDC_AdapterList,13,27,495,54,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择一个网络适配器：",IDC_STATIC,13,16,80,8
+    PUSHBUTTON      "停止",IDC_STOP,466,269,50,14
+    GROUPBOX        "电流基波有效值(kA)",IDC_STATIC,7,49,82,92
+    EDITTEXT        IDC_EDIT1,38,64,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,38,89,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,38,114,40,12,ES_AUTOHSCROLL
+    LTEXT           "A相 :",IDC_STATIC,13,67,18,8
+    LTEXT           "B相 :",IDC_STATIC,13,91,18,8
+    LTEXT           "C相 :",IDC_STATIC,13,115,18,8
+    GROUPBOX        "电压基波有效值(kV)",IDC_STATIC,265,49,82,92
+    EDITTEXT        IDC_EDIT4,296,64,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,296,89,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,296,114,40,12,ES_AUTOHSCROLL
+    LTEXT           "A相 :",IDC_STATIC,271,67,18,8
+    LTEXT           "B相 :",IDC_STATIC,271,91,18,8
+    LTEXT           "C相 :",IDC_STATIC,271,115,18,8
+    GROUPBOX        "中线基波有效值",IDC_STATIC,7,145,82,68
+    EDITTEXT        IDC_EDIT7,39,163,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,39,191,40,12,ES_AUTOHSCROLL
+    LTEXT           "电流 :",IDC_STATIC,13,165,21,8
+    LTEXT           "电压 :",IDC_STATIC,13,193,21,8
+    GROUPBOX        "相位偏移(°)",IDC_STATIC,325,216,82,86
+    EDITTEXT        IDC_EDIT9,358,229,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,358,253,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,358,276,40,12,ES_AUTOHSCROLL
+    LTEXT           "A相 :",IDC_STATIC,332,231,18,8
+    LTEXT           "B相 :",IDC_STATIC,332,255,18,8
+    LTEXT           "C相 :",IDC_STATIC,332,278,18,8
+    LTEXT           "故障持续周期 :",IDC_STATIC,243,226,53,8
+    EDITTEXT        IDC_EDIT_faultPeriod,278,239,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_desmac,248,14,74,12,ES_AUTOHSCROLL
+    LTEXT           "目的MAC地址 :",IDC_STATIC,192,16,52,8
+    EDITTEXT        IDC_EDIT_soumac,385,14,74,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "本机MAC地址 :",IDC_STATIC,329,16,52,8
+    LTEXT           "A相电流",IDC_PLOT_CURRENT_A,97,58,115,24
+    GROUPBOX        "网络配置",IDC_STATIC,7,7,508,39
+    LTEXT           "B相电流",IDC_PLOT_CURRENT_B,97,82,115,24
+    LTEXT           "C相电流",IDC_PLOT_CURRENT_C,97,106,115,24
+    GROUPBOX        "电流波形",IDC_STATIC_Awave,93,49,163,92
+    LTEXT           "ABC三相电流",IDC_PLOT_CURRENT_ABC,97,58,115,72
+    EDITTEXT        IDC_EDIT13,96,57,117,74,ES_AUTOHSCROLL
+    GROUPBOX        "电压波形",IDC_STATIC,352,49,163,92
+    CONTROL         "手动修改",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,463,15,48,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,97,58,116,72
+    GROUPBOX        "波形",IDC_STATIC,93,145,163,68
+    LTEXT           "A相电压",IDC_PLOT_VOLTAGE_A,356,58,115,24
+    LTEXT           "B相电压",IDC_PLOT_VOLTAGE_B,356,82,115,24
+    LTEXT           "C相电压",IDC_PLOT_VOLTAGE_C,356,106,115,24
+    LTEXT           "ABC三相电压",IDC_PLOT_VOLTAGE_ABC,356,58,115,72
+    EDITTEXT        IDC_EDIT14,355,57,117,74,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,355,58,116,72
+    CONTROL         "Slider1",IDC_SLIDER_A,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,94,131,121,9
+    CONTROL         "Slider1",IDC_SLIDER_V,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,353,131,121,9
+    GROUPBOX        "故障模拟",IDC_STATIC,7,216,315,86
+    CONTROL         "三相接地",IDC_RADIO_k3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,235,48,10
+    CONTROL         "单项接地",IDC_RADIO_k1,"Button",BS_AUTORADIOBUTTON,23,
+                    246,48,10
+    CONTROL         "两相短路",IDC_RADIO_k2,"Button",BS_AUTORADIOBUTTON,75,
+                    235,48,10
+    CONTROL         "两相接地",IDC_RADIO_k11,"Button",BS_AUTORADIOBUTTON,75,
+                    246,48,10
+    CONTROL         "单相断线",IDC_RADIO_d1,"Button",BS_AUTORADIOBUTTON,127,
+                    235,48,10
+    CONTROL         "两相断线",IDC_RADIO_d2,"Button",BS_AUTORADIOBUTTON,127,
+                    246,48,10
+    GROUPBOX        "故障类型",IDC_STATIC,14,226,177,70
+    GROUPBOX        "故障相",IDC_STATIC,195,226,45,70
+    CONTROL         "A相",IDC_CHECK_fa,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,241,29,10
+    CONTROL         "B相",IDC_CHECK_fb,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,258,29,10
+    CONTROL         "C相",IDC_CHECK_fc,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,275,29,10
+    PUSHBUTTON      "故障开始",IDC_BUTTON_faulton,258,258,50,14
+    PUSHBUTTON      "故障停止",IDC_BUTTON_faultoff,258,278,50,14
+    GROUPBOX        "调幅(倍数)",IDC_STATIC,266,145,80,68
+    GROUPBOX        "高次谐波",IDC_STATIC,350,145,80,68
+    EDITTEXT        IDC_EDIT15,298,170,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,298,184,40,12,ES_AUTOHSCROLL
+    LTEXT           "频率:",IDC_STATIC,272,186,19,8
+    LTEXT           "幅值:",IDC_STATIC,272,171,19,8
+    EDITTEXT        IDC_EDIT17,382,170,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,382,184,40,12,ES_AUTOHSCROLL
+    LTEXT           "幅值:",IDC_STATIC,356,186,19,8
+    LTEXT           "次数:",IDC_STATIC,356,171,19,8
+    PUSHBUTTON      "+",IDC_BUTTON1,321,200,10,9
+    PUSHBUTTON      "—",IDC_BUTTON2,333,200,10,9
+    PUSHBUTTON      "+",IDC_BUTTON3,405,200,10,9
+    PUSHBUTTON      "—",IDC_BUTTON4,417,200,10,9
+    CONTROL         "关闭",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,215,193,32,10
+    CONTROL         "电流",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,215,160,
+                    32,10
+    CONTROL         "电压",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,215,177,
+                    32,10
+    GROUPBOX        "频率偏移(Hz)",IDC_STATIC,433,145,82,68
+    LTEXT           "选择:",IDC_STATIC,440,157,19,8
+    COMBOBOX        IDC_COMBO_freq,466,155,42,92,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择:",IDC_STATIC,356,157,19,8
+    COMBOBOX        IDC_COMBO_harm,382,155,42,91,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择:",IDC_STATIC,272,157,19,8
+    COMBOBOX        IDC_COMBO_add,298,155,42,86,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON5,490,200,10,9
+    PUSHBUTTON      "—",IDC_BUTTON6,502,200,10,9
+    LTEXT           "偏移频率:",IDC_STATIC,440,173,35,8
+    EDITTEXT        IDC_EDIT19,465,184,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_smprate,489,218,26,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "采样率(采样点/周波):",IDC_STATIC,411,220,74,8
+    LTEXT           "采样计数:",IDC_STATIC,411,234,35,8
+    EDITTEXT        IDC_EDIT_smpcount,451,232,64,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT20,298,198,21,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "已加:",IDC_STATIC,272,200,24,8
+    EDITTEXT        IDC_EDIT21,381,198,21,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "已加:",IDC_STATIC,355,200,19,8
+    EDITTEXT        IDC_EDIT22,465,198,21,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "已加:",IDC_STATIC,440,200,24,8
+    PUSHBUTTON      "关于软件",IDC_BUTTON7,413,288,50,14
+    PUSHBUTTON      "保存数据",IDC_BUTTON8,413,269,50,14
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,20,256,25,23
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP,45,256,119,23
+    CONTROL         "Slider1",IDC_SLIDER_fault,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,45,281,123,11
+    EDITTEXT        IDC_EDIT_left,24,280,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_right,168,280,19,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SEND1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        VERTGUIDE, 464
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_S            BITMAP  DISCARDABLE     "res\\bitmap_s.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Send1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Send1 Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Send1 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Send1\0"
+            VALUE "LegalCopyright", "Copyright (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Send1.EXE\0"
+            VALUE "ProductName", "Send1 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Send1..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Send1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

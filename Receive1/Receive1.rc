@@ -1,0 +1,370 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Receive1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Receive1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RECEIVE1_DIALOG DIALOGEX 0, 0, 515, 399
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Receive1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "关闭",IDC_RADIO_listoff,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,16,150,43,8
+    CONTROL         "打开",IDC_RADIO_liston,"Button",BS_AUTORADIOBUTTON,16,
+                    138,33,8
+    CONTROL         "只显示序号",IDC_RADIO_listseq,"Button",
+                    BS_AUTORADIOBUTTON,49,138,52,8
+    CONTROL         "A,B,C相",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,129,179,38,10
+    CONTROL         "A相",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,129,195,29,
+                    10
+    CONTROL         "B相",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,129,211,29,
+                    10
+    CONTROL         "C相",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,129,227,29,
+                    10
+    CONTROL         "关闭",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,129,243,
+                    32,10
+    DEFPUSHBUTTON   "开始捕捉",IDOK,452,130,50,14
+    PUSHBUTTON      "退出",IDCANCEL,458,361,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    13,58,488,68
+    LTEXT           "选择一个网络适配器：",IDC_STATIC,13,16,98,8
+    COMBOBOX        IDC_AdapterList,13,27,489,58,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "不过滤",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,111,138,40,10
+    CONTROL         "不捕获ARP",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,329,
+                    150,55,10
+    CONTROL         "只捕获TCP",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,111,
+                    150,54,10
+    CONTROL         "只捕获UDP",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,169,
+                    150,55,10
+    CONTROL         "只捕获ICMP",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,329,
+                    138,57,10
+    CONTROL         "过滤源MAC地址:",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,
+                    169,138,73,10
+    PUSHBUTTON      "停止",IDC_STOP,452,147,50,14
+    PUSHBUTTON      "清空数据",IDC_BUTTON_CLEAR,397,147,50,14
+    LTEXT           "A相电流",IDC_PLOT_CURRENT_A,11,179,115,24
+    LTEXT           "本机MAC地址 :",IDC_STATIC,372,16,52,8
+    EDITTEXT        IDC_EDIT_soumac,428,14,74,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "网络配置",IDC_STATIC,7,7,501,39
+    GROUPBOX        "电流波形",IDC_STATIC,7,169,163,92
+    LTEXT           "B相电流",IDC_PLOT_CURRENT_B,11,203,115,24
+    LTEXT           "C相电流",IDC_PLOT_CURRENT_C,11,227,115,24
+    LTEXT           "abc",IDC_PLOT_CURRENT_ABC,11,179,115,72
+    EDITTEXT        IDC_EDIT1,10,178,118,74,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_fliter_src,243,137,74,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,386,501,6
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,11,179,116,72
+    CONTROL         "Slider1",IDC_SLIDER_A,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,8,251,121,9
+    CONTROL         "A,B,C相",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,298,179,38,10
+    CONTROL         "A相",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,298,195,29,
+                    10
+    CONTROL         "B相",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,298,211,29,
+                    10
+    CONTROL         "C相",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,298,227,29,
+                    10
+    CONTROL         "关闭",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,298,243,
+                    32,10
+    LTEXT           "A相电压",IDC_PLOT_VOLTAGE_A,180,179,115,24
+    GROUPBOX        "电压波形",IDC_STATIC,176,169,163,92
+    LTEXT           "B相电压",IDC_PLOT_VOLTAGE_B,180,203,115,24
+    LTEXT           "C相电压",IDC_PLOT_VOLTAGE_C,180,227,115,24
+    LTEXT           "abc",IDC_PLOT_VOLTAGE_ABC,180,179,115,72
+    EDITTEXT        IDC_EDIT2,179,178,117,74,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,180,179,116,72
+    CONTROL         "Slider1",IDC_SLIDER_V,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,177,251,121,9
+    GROUPBOX        "中性线波形",IDC_STATIC,345,169,163,92
+    CONTROL         "关闭",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON,457,243,
+                    32,10
+    CONTROL         "电压",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON,457,221,
+                    32,10
+    CONTROL         "电流",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON,457,200,
+                    32,10
+    CONTROL         "电流,电压",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,457,
+                    179,50,10
+    GROUPBOX        "过滤规则",IDC_STATIC,107,129,281,33
+    GROUPBOX        "数据包列表",IDC_STATIC,7,46,501,121
+    GROUPBOX        "列表控制",IDC_STATIC,12,129,92,33
+    GROUPBOX        "电能质量分析",IDC_STATIC,7,264,501,91
+    GROUPBOX        "谐波分析",IDC_STATIC,12,275,101,75
+    LTEXT           "谐波次数：",IDC_STATIC,17,299,41,8
+    EDITTEXT        IDC_EDIT3,67,297,28,12,ES_AUTOHSCROLL
+    LTEXT           "谐波含有率：",IDC_STATIC,17,313,48,8
+    EDITTEXT        IDC_EDIT4,67,311,41,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "畸变率：",IDC_STATIC,18,326,33,8
+    EDITTEXT        IDC_EDIT5,67,324,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "分析",IDC_BUTTON_harm_ana,42,337,39,10
+    GROUPBOX        "电压/电流偏移",IDC_STATIC,117,275,101,75
+    LTEXT           "测量有效值：",IDC_STATIC,123,304,48,8
+    EDITTEXT        IDC_EDIT7,172,302,41,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "偏差：",IDC_STATIC,123,320,25,8
+    EDITTEXT        IDC_EDIT8,172,318,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "分析",IDC_BUTTON_skew,147,337,39,10
+    COMBOBOX        IDC_COMBO_skew,172,284,42,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量值：",IDC_STATIC,123,288,48,8
+    GROUPBOX        "波动/闪变",IDC_STATIC,222,275,101,75
+    LTEXT           "波动：",IDC_STATIC,228,299,48,8
+    EDITTEXT        IDC_EDIT9,277,297,41,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "瞬时闪变：",IDC_STATIC,228,313,41,8
+    EDITTEXT        IDC_EDIT10,277,311,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "分析",IDC_BUTTON_flick,252,337,39,10
+    COMBOBOX        IDC_COMBO_flick,277,283,42,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量值：",IDC_STATIC,228,287,48,8
+    LTEXT           "长期闪变：",IDC_STATIC,228,326,41,8
+    EDITTEXT        IDC_EDIT11,277,324,41,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "三相不平衡度",IDC_STATIC,327,275,101,75
+    LTEXT           "三相不平衡度：",IDC_STATIC,333,306,71,8
+    EDITTEXT        IDC_EDIT12,382,317,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "分析",IDC_BUTTON_unbalance,357,337,39,10
+    COMBOBOX        IDC_COMBO_unbalance,382,285,42,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量值：",IDC_STATIC,333,288,48,8
+    GROUPBOX        "频率偏差",IDC_STATIC,432,275,72,75
+    LTEXT           "频率偏差：",IDC_STATIC,437,311,43,8
+    EDITTEXT        IDC_EDIT13,457,320,41,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "分析",IDC_BUTTON_freqdrift,449,337,39,10
+    COMBOBOX        IDC_COMBO_freqDriftList,457,295,42,101,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量值：",IDC_STATIC,437,286,49,8
+    COMBOBOX        IDC_COMBO_harm,67,283,42,101,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量值：",IDC_STATIC,18,287,48,8
+    EDITTEXT        IDC_EDIT_smpcount,401,363,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "采样计数：",IDC_STATIC,358,365,41,8
+    PUSHBUTTON      "关于软件",IDC_BUTTON1,298,362,50,14
+    PUSHBUTTON      "保存数据",IDC_BUTTON2,239,362,50,14
+    EDITTEXT        IDC_EDIT_youxiaozhi,192,362,40,14,ES_AUTOHSCROLL
+    LTEXT           "有效值：",IDC_STATIC,154,364,33,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RECEIVE1_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 508
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 392
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Receive1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Receive1 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Receive1 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Receive1\0"
+            VALUE "LegalCopyright", "Copyright (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Receive1.EXE\0"
+            VALUE "ProductName", "Receive1 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Receive1..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Receive1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
